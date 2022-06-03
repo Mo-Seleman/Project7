@@ -290,8 +290,13 @@ hr {
   border-top: 1px solid #777777;
 }
 
+/* line 246, ../../../../Code/Project7/scss/base/_typography.scss */
+.dropdown-menu {
+  pointer-events: none;
+}
+
 /* { outline: none; } */
-/* line 247, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 250, ../../../../Code/Project7/scss/base/_typography.scss */
 #bellIcon:focus + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
@@ -387,20 +392,72 @@ button[id="traffic-nav-link"] {
   padding-top: 10px;
 }
 
+/* line 22, ../../../../Code/Project7/scss/components/_forms.scss */
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 26, ../../../../Code/Project7/scss/components/_forms.scss */
+input[type=text] {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* line 31, ../../../../Code/Project7/scss/components/_forms.scss */
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+/* line 35, ../../../../Code/Project7/scss/components/_forms.scss */
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* line 46, ../../../../Code/Project7/scss/components/_forms.scss */
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* line 53, ../../../../Code/Project7/scss/components/_forms.scss */
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+
+/* line 57, ../../../../Code/Project7/scss/components/_forms.scss */
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
 /* ================================= */
 /*             Settings              */
 /* ================================= */
-/* line 26, ../../../../Code/Project7/scss/components/_forms.scss */
+/* line 66, ../../../../Code/Project7/scss/components/_forms.scss */
 .settings {
   padding-bottom: 20px;
 }
 
-/* line 30, ../../../../Code/Project7/scss/components/_forms.scss */
+/* line 70, ../../../../Code/Project7/scss/components/_forms.scss */
 .switch-light {
   padding: 10px 0;
 }
 
-/* line 34, ../../../../Code/Project7/scss/components/_forms.scss */
+/* line 74, ../../../../Code/Project7/scss/components/_forms.scss */
 #Timezones {
   border: 2px solid #d1d1d1;
   border-radius: 10px;
@@ -509,7 +566,7 @@ main {
   /* line 32, ../../../../Code/Project7/scss/components/_media-queries.scss */
   nav {
     display: table-cell;
-    height: 148rem;
+    height: 149rem;
     width: 90px;
   }
   /* line 37, ../../../../Code/Project7/scss/components/_media-queries.scss */
