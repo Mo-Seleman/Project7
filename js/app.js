@@ -225,5 +225,5 @@ const timezone = document.getElementById("Timezones").value;
 localStorage.setItem("Send Email Notifications?", emailOnOff);
 localStorage.setItem("Set Profile to Public?", profileOnOff);
 localStorage.setItem("Timezone", timezone);
+location.reload();
 };
-

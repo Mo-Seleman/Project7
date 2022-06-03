@@ -1,5 +1,8 @@
+button {
+    background: fixed;
+}
+
 button:not(.traffic-nav-link) {
-    background-color: $dark-purple;
     border: none;
     color: white;
 }
@@ -10,11 +13,22 @@ button:not(.traffic-nav-link) {
 /*             Navigation Btn            */
 /* ===================================== */
 button[id="traffic-nav-link"] {
-    background: none;
 	color: inherit;
 	border: none;
 	font: inherit;
 	outline: inherit;
+    &:hover {
+        background-color: #81c98f;
+        color: white;
+        border-radius: 30px;
+        padding: 3px; 
+    }
+}
+button[id="alert-bar-x"]{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
 }
 /* ===================================== */
 /*             Message User              */

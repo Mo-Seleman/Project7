@@ -23,11 +23,6 @@ nav {
 .traffic-nav {
     display: flex;
     justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    :first-child {
-      background-color: #81c98f;
-      color: white;
-      border-radius: 30px;
-    }
+    margin-top: 15px;
+    margin-bottom: 15px;
   }

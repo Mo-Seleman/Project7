@@ -122,43 +122,51 @@ hr {
 }
 
 /* line 106, ../../../../Code/Project7/scss/base/_typography.scss */
+.trafficSelect {
+  background-color: #81c98f;
+  color: white;
+  border-radius: 30px;
+  padding: 7px;
+}
+
+/* line 113, ../../../../Code/Project7/scss/base/_typography.scss */
 .traffic {
   padding: 10px;
 }
 
-/* line 109, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 116, ../../../../Code/Project7/scss/base/_typography.scss */
 .traffic,
 .daily-traffic,
 .mobile-users {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 115, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 122, ../../../../Code/Project7/scss/base/_typography.scss */
 .daily-traffic {
   padding: 0 10px 10px 10px;
 }
 
-/* line 120, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 127, ../../../../Code/Project7/scss/base/_typography.scss */
 .daily-traffic h3 {
   padding: 10px 0;
 }
 
-/* line 124, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 131, ../../../../Code/Project7/scss/base/_typography.scss */
 .mobile-users {
   padding: 10px;
 }
 
-/* line 126, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 133, ../../../../Code/Project7/scss/base/_typography.scss */
 .mobile-users h3 {
   padding-bottom: 10px;
 }
 
-/* line 131, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 138, ../../../../Code/Project7/scss/base/_typography.scss */
 .socialStatsH3 {
   padding: 10px 0 0 10px;
 }
 
-/* line 135, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 142, ../../../../Code/Project7/scss/base/_typography.scss */
 .new-members,
 .recent-activity,
 .message-user,
@@ -170,7 +178,7 @@ hr {
 /* ============================================= */
 /*                  Charts                       */
 /* ============================================= */
-/* line 146, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 153, ../../../../Code/Project7/scss/base/_typography.scss */
 .widget-container-traffic,
 .widget-container-daily-traffic,
 .widget-container-mobile-users {
@@ -181,7 +189,7 @@ hr {
 /* ===================================== */
 /*              Social Stats             */
 /* ===================================== */
-/* line 156, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 163, ../../../../Code/Project7/scss/base/_typography.scss */
 .facebook-stats,
 .instagram-stats,
 .twitter-stats {
@@ -194,7 +202,7 @@ hr {
   align-items: center;
 }
 
-/* line 168, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 175, ../../../../Code/Project7/scss/base/_typography.scss */
 #facebook-text-header,
 #instagram-text-header,
 #twitter-text-header {
@@ -202,7 +210,7 @@ hr {
   color: #7477bf;
 }
 
-/* line 175, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 182, ../../../../Code/Project7/scss/base/_typography.scss */
 #facebook-text-number,
 #instagram-text-number,
 #twitter-text-number {
@@ -213,18 +221,18 @@ hr {
 /* ===================================== */
 /*      New Members/Recent Activity      */
 /* ===================================== */
-/* line 186, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 193, ../../../../Code/Project7/scss/base/_typography.scss */
 .styleTag {
   text-align: center;
 }
 
-/* line 190, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 197, ../../../../Code/Project7/scss/base/_typography.scss */
 #new-members-header,
 #recent-activity-header {
   margin-bottom: 15px;
 }
 
-/* line 195, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 202, ../../../../Code/Project7/scss/base/_typography.scss */
 #Victoria-Chambers a,
 #Dale-Byrd a,
 #Dawn-Wood a,
@@ -235,12 +243,12 @@ hr {
 /* ===================================== */
 /*                Settings               */
 /* ===================================== */
-/* line 205, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 212, ../../../../Code/Project7/scss/base/_typography.scss */
 #send-email-notifactions-header {
   padding-right: 15px;
 }
 
-/* line 208, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 215, ../../../../Code/Project7/scss/base/_typography.scss */
 #set-profile-to-public-toggle {
   padding-right: 40px;
   /* ===================================== */
@@ -248,12 +256,12 @@ hr {
   /* ===================================== */
 }
 
-/* line 214, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 221, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown {
   position: relative;
 }
 
-/* line 218, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 225, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu {
   position: absolute;
   left: 0;
@@ -268,48 +276,52 @@ hr {
   border-radius: 5px;
 }
 
-/* line 230, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 237, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu p {
   font-size: 12px;
 }
 
-/* line 233, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 240, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu img {
   padding: 4px;
 }
 
-/* line 238, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 245, ../../../../Code/Project7/scss/base/_typography.scss */
 .vcDrop,
 .dbDrop {
   display: flex;
   align-items: center;
 }
 
-/* line 243, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 250, ../../../../Code/Project7/scss/base/_typography.scss */
 .dbDrop {
   border-top: 1px solid #777777;
 }
 
-/* line 246, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 253, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu {
   pointer-events: none;
 }
 
 /* { outline: none; } */
-/* line 250, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 257, ../../../../Code/Project7/scss/base/_typography.scss */
 #bellIcon:focus + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* line 1, ../../../../Code/Project7/scss/components/_buttons.scss */
+button {
+  background: fixed;
+}
+
+/* line 5, ../../../../Code/Project7/scss/components/_buttons.scss */
 button:not(.traffic-nav-link) {
-  background-color: #7477bf;
   border: none;
   color: white;
 }
 
-/* line 6, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 9, ../../../../Code/Project7/scss/components/_buttons.scss */
 #bellIcon:hover {
   fill: green;
 }
@@ -317,19 +329,34 @@ button:not(.traffic-nav-link) {
 /* ===================================== */
 /*             Navigation Btn            */
 /* ===================================== */
-/* line 12, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 15, ../../../../Code/Project7/scss/components/_buttons.scss */
 button[id="traffic-nav-link"] {
-  background: none;
   color: inherit;
   border: none;
   font: inherit;
   outline: inherit;
 }
 
+/* line 20, ../../../../Code/Project7/scss/components/_buttons.scss */
+button[id="traffic-nav-link"]:hover {
+  background-color: #81c98f;
+  color: white;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+/* line 27, ../../../../Code/Project7/scss/components/_buttons.scss */
+button[id="alert-bar-x"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+}
+
 /* ===================================== */
 /*             Message User              */
 /* ===================================== */
-/* line 22, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 36, ../../../../Code/Project7/scss/components/_buttons.scss */
 #message-user-button {
   width: 100%;
   height: 40px;
@@ -339,13 +366,13 @@ button[id="traffic-nav-link"] {
   color: white;
 }
 
-/* line 30, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 44, ../../../../Code/Project7/scss/components/_buttons.scss */
 .settings-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 35, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 49, ../../../../Code/Project7/scss/components/_buttons.scss */
 #save-button,
 #cancel-button {
   width: 48%;
@@ -354,13 +381,13 @@ button[id="traffic-nav-link"] {
   border-radius: 10px;
 }
 
-/* line 43, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 57, ../../../../Code/Project7/scss/components/_buttons.scss */
 #save-button {
   background-color: #7477bf;
   color: white;
 }
 
-/* line 48, ../../../../Code/Project7/scss/components/_buttons.scss */
+/* line 62, ../../../../Code/Project7/scss/components/_buttons.scss */
 #cancel-button {
   background-color: #999999;
   color: white;
@@ -498,15 +525,8 @@ nav {
 .traffic-nav {
   display: flex;
   justify-content: space-around;
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-
-/* line 28, ../../../../Code/Project7/scss/components/_navigation.scss */
-.traffic-nav :first-child {
-  background-color: #81c98f;
-  color: white;
-  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* line 2, ../../../../Code/Project7/scss/components/_grid.scss */
