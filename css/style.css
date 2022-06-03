@@ -1,0 +1,820 @@
+/* line 1, ../../../../Code/Project7/scss/base/_typography.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Anonymous Pro", monospace;
+}
+
+/* line 8, ../../../../Code/Project7/scss/base/_typography.scss */
+a {
+  text-decoration: none;
+  color: #7477bf;
+}
+
+/* line 13, ../../../../Code/Project7/scss/base/_typography.scss */
+ul {
+  list-style: none;
+}
+
+/* line 17, ../../../../Code/Project7/scss/base/_typography.scss */
+header {
+  grid-area: header;
+  width: 100%;
+  height: 60px;
+  background-color: #7477bf;
+  color: white;
+  display: grid;
+}
+
+/* line 26, ../../../../Code/Project7/scss/base/_typography.scss */
+.header-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 2fr;
+  align-items: center;
+}
+
+/* line 32, ../../../../Code/Project7/scss/base/_typography.scss */
+header span {
+  font-weight: 100;
+}
+
+/* line 36, ../../../../Code/Project7/scss/base/_typography.scss */
+#bellIcon {
+  width: 25px;
+  justify-self: center;
+}
+
+/* line 41, ../../../../Code/Project7/scss/base/_typography.scss */
+.bellIconContainer {
+  margin: auto;
+}
+
+/* line 43, ../../../../Code/Project7/scss/base/_typography.scss */
+.bellIconContainer :hover {
+  transform: scale(1.2);
+  transition: transform 0.1s;
+}
+
+/* line 49, ../../../../Code/Project7/scss/base/_typography.scss */
+#header-img {
+  width: 40px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+/* line 55, ../../../../Code/Project7/scss/base/_typography.scss */
+header h1 {
+  justify-self: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 grey, 1px 1px 0 grey;
+}
+
+/* line 61, ../../../../Code/Project7/scss/base/_typography.scss */
+.studentName {
+  justify-self: center;
+  font-size: 13.5px;
+}
+
+/* line 66, ../../../../Code/Project7/scss/base/_typography.scss */
+hr {
+  margin: 25px;
+}
+
+/* ================================================================ */
+/*                               Body                               */
+/* ================================================================ */
+/* line 74, ../../../../Code/Project7/scss/base/_typography.scss */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 80, ../../../../Code/Project7/scss/base/_typography.scss */
+.headline {
+  padding: 0 10px;
+}
+
+/* line 84, ../../../../Code/Project7/scss/base/_typography.scss */
+.light-grey-tab {
+  background-color: #f5f5f5;
+  border: 1px solid #cfcfcf;
+  width: 57%;
+  height: 50px;
+}
+
+/* line 91, ../../../../Code/Project7/scss/base/_typography.scss */
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7477bf;
+  color: white;
+  width: 90vw;
+  margin: 10px auto 0 auto;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+/* line 101, ../../../../Code/Project7/scss/base/_typography.scss */
+.alert p {
+  font-size: 13px;
+}
+
+/* line 106, ../../../../Code/Project7/scss/base/_typography.scss */
+.traffic {
+  padding: 10px;
+}
+
+/* line 109, ../../../../Code/Project7/scss/base/_typography.scss */
+.traffic,
+.daily-traffic,
+.mobile-users {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 115, ../../../../Code/Project7/scss/base/_typography.scss */
+.daily-traffic {
+  padding: 0 10px 10px 10px;
+}
+
+/* line 120, ../../../../Code/Project7/scss/base/_typography.scss */
+.daily-traffic h3 {
+  padding: 10px 0;
+}
+
+/* line 124, ../../../../Code/Project7/scss/base/_typography.scss */
+.mobile-users {
+  padding: 10px;
+}
+
+/* line 126, ../../../../Code/Project7/scss/base/_typography.scss */
+.mobile-users h3 {
+  padding-bottom: 10px;
+}
+
+/* line 131, ../../../../Code/Project7/scss/base/_typography.scss */
+.socialStatsH3 {
+  padding: 10px 0 0 10px;
+}
+
+/* line 135, ../../../../Code/Project7/scss/base/_typography.scss */
+.new-members,
+.recent-activity,
+.message-user,
+.settings {
+  border-top: 1px solid #cccccc;
+  padding: 10px;
+}
+
+/* ============================================= */
+/*                  Charts                       */
+/* ============================================= */
+/* line 146, ../../../../Code/Project7/scss/base/_typography.scss */
+.widget-container-traffic,
+.widget-container-daily-traffic,
+.widget-container-mobile-users {
+  width: 93vw;
+  height: 150px;
+}
+
+/* ===================================== */
+/*              Social Stats             */
+/* ===================================== */
+/* line 156, ../../../../Code/Project7/scss/base/_typography.scss */
+.facebook-stats,
+.instagram-stats,
+.twitter-stats {
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
+/* line 168, ../../../../Code/Project7/scss/base/_typography.scss */
+#facebook-text-header,
+#instagram-text-header,
+#twitter-text-header {
+  font-size: 1.25rem;
+  color: #7477bf;
+}
+
+/* line 175, ../../../../Code/Project7/scss/base/_typography.scss */
+#facebook-text-number,
+#instagram-text-number,
+#twitter-text-number {
+  font-size: 2rem;
+  color: #777777;
+}
+
+/* ===================================== */
+/*      New Members/Recent Activity      */
+/* ===================================== */
+/* line 186, ../../../../Code/Project7/scss/base/_typography.scss */
+.styleTag {
+  text-align: center;
+}
+
+/* line 190, ../../../../Code/Project7/scss/base/_typography.scss */
+#new-members-header,
+#recent-activity-header {
+  margin-bottom: 15px;
+}
+
+/* line 195, ../../../../Code/Project7/scss/base/_typography.scss */
+#Victoria-Chambers a,
+#Dale-Byrd a,
+#Dawn-Wood a,
+#Dan-Oliver a {
+  display: block;
+}
+
+/* ===================================== */
+/*                Settings               */
+/* ===================================== */
+/* line 205, ../../../../Code/Project7/scss/base/_typography.scss */
+#send-email-notifactions-header {
+  padding-right: 15px;
+}
+
+/* line 208, ../../../../Code/Project7/scss/base/_typography.scss */
+#set-profile-to-public-toggle {
+  padding-right: 40px;
+  /* ===================================== */
+  /*             Dropdown Menu             */
+  /* ===================================== */
+}
+
+/* line 214, ../../../../Code/Project7/scss/base/_typography.scss */
+.dropdown {
+  position: relative;
+}
+
+/* line 218, ../../../../Code/Project7/scss/base/_typography.scss */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .5rem);
+  background-color: #f5f5f5;
+  color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  width: 150px;
+  border-radius: 5px;
+}
+
+/* line 230, ../../../../Code/Project7/scss/base/_typography.scss */
+.dropdown-menu p {
+  font-size: 12px;
+}
+
+/* line 233, ../../../../Code/Project7/scss/base/_typography.scss */
+.dropdown-menu img {
+  padding: 4px;
+}
+
+/* line 238, ../../../../Code/Project7/scss/base/_typography.scss */
+.vcDrop,
+.dbDrop {
+  display: flex;
+  align-items: center;
+}
+
+/* line 243, ../../../../Code/Project7/scss/base/_typography.scss */
+.dbDrop {
+  border-top: 1px solid #777777;
+}
+
+/* { outline: none; } */
+/* line 247, ../../../../Code/Project7/scss/base/_typography.scss */
+#bellIcon:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 1, ../../../../Code/Project7/scss/components/_buttons.scss */
+button:not(.traffic-nav-link) {
+  background-color: #7477bf;
+  border: none;
+  color: white;
+}
+
+/* line 6, ../../../../Code/Project7/scss/components/_buttons.scss */
+#bellIcon:hover {
+  fill: green;
+}
+
+/* ===================================== */
+/*             Navigation Btn            */
+/* ===================================== */
+/* line 12, ../../../../Code/Project7/scss/components/_buttons.scss */
+button[id="traffic-nav-link"] {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
+}
+
+/* ===================================== */
+/*             Message User              */
+/* ===================================== */
+/* line 22, ../../../../Code/Project7/scss/components/_buttons.scss */
+#message-user-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #d1d1d1;
+  background-color: #7477bf;
+  color: white;
+}
+
+/* line 30, ../../../../Code/Project7/scss/components/_buttons.scss */
+.settings-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 35, ../../../../Code/Project7/scss/components/_buttons.scss */
+#save-button,
+#cancel-button {
+  width: 48%;
+  height: 40px;
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+}
+
+/* line 43, ../../../../Code/Project7/scss/components/_buttons.scss */
+#save-button {
+  background-color: #7477bf;
+  color: white;
+}
+
+/* line 48, ../../../../Code/Project7/scss/components/_buttons.scss */
+#cancel-button {
+  background-color: #999999;
+  color: white;
+}
+
+/* ===================================== */
+/*             Message User              */
+/* ===================================== */
+/* line 5, ../../../../Code/Project7/scss/components/_forms.scss */
+#message-user-search {
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+/* line 11, ../../../../Code/Project7/scss/components/_forms.scss */
+#message-user-message {
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f5f5;
+  margin: 10px 0;
+  padding-left: 14px;
+  padding-top: 10px;
+}
+
+/* ================================= */
+/*             Settings              */
+/* ================================= */
+/* line 26, ../../../../Code/Project7/scss/components/_forms.scss */
+.settings {
+  padding-bottom: 20px;
+}
+
+/* line 30, ../../../../Code/Project7/scss/components/_forms.scss */
+.switch-light {
+  padding: 10px 0;
+}
+
+/* line 34, ../../../../Code/Project7/scss/components/_forms.scss */
+#Timezones {
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+  margin: 25px 0 15px 0;
+  padding-left: 10px;
+}
+
+/* line 1, ../../../../Code/Project7/scss/components/_navigation.scss */
+nav {
+  grid-area: nav;
+  background-color: #4d4c72;
+  display: flex;
+  max-height: 60px;
+}
+
+/* line 8, ../../../../Code/Project7/scss/components/_navigation.scss */
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+/* line 14, ../../../../Code/Project7/scss/components/_navigation.scss */
+.navigation a {
+  display: flex;
+  flex-grow: 1;
+  padding: 15px;
+  height: 4rem;
+  justify-content: center;
+}
+
+/* line 23, ../../../../Code/Project7/scss/components/_navigation.scss */
+.traffic-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* line 28, ../../../../Code/Project7/scss/components/_navigation.scss */
+.traffic-nav :first-child {
+  background-color: #81c98f;
+  color: white;
+  border-radius: 30px;
+}
+
+/* line 2, ../../../../Code/Project7/scss/components/_grid.scss */
+body {
+  display: grid;
+}
+
+/* line 6, ../../../../Code/Project7/scss/components/_grid.scss */
+main {
+  grid-area: main;
+}
+
+/* line 10, ../../../../Code/Project7/scss/components/_grid.scss */
+.grid-container {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header header" "nav nav" "main main";
+}
+
+@media (min-width: 768px) {
+  /* line 2, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  header {
+    height: 80px;
+  }
+  /* line 5, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  h3 {
+    padding-left: 5px;
+  }
+  /* line 8, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  body {
+    display: grid;
+  }
+  /* line 11, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .grid-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header" "nav main";
+  }
+  /* line 18, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  header {
+    display: flex;
+  }
+  /* line 20, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  header h1 {
+    padding-left: 0.938rem;
+    padding-right: 26.25rem;
+  }
+  /* line 25, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .dropdown-menu {
+    width: 200px;
+  }
+  /* line 28, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .nav-container {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+  /* line 32, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  nav {
+    display: table-cell;
+    height: 148rem;
+    width: 90px;
+  }
+  /* line 37, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .navigation {
+    display: inline;
+  }
+  /* line 40, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .light-grey-tab {
+    width: 80%;
+  }
+  /* line 43, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #alert-bar {
+    width: 85vw;
+  }
+  /* line 45, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #alert-bar p {
+    font-size: 14px;
+  }
+  /* line 49, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .traffic-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 54, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  li,
+  button {
+    padding: 10px;
+  }
+  /* line 58, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #traffic-header {
+    padding-left: 10px;
+  }
+  /* line 61, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .traffic-nav {
+    padding-top: 0;
+  }
+  /* line 64, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .widget-container-traffic {
+    width: 700px;
+    height: 300px;
+  }
+  /* line 68, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .daily-traffic,
+  .mobile-users {
+    width: 43vw;
+    display: inline-block;
+  }
+  /* line 73, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #daily-traffic-chart {
+    width: 240px;
+  }
+  /* line 76, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .widget-container-daily-traffic,
+  .widget-container-mobile-users {
+    width: 320px;
+    height: 200px;
+  }
+  /* line 81, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .daily-traffic {
+    border-right: 1px solid #cccccc;
+  }
+  /* line 84, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .social-stats {
+    display: flex;
+  }
+  /* line 87, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .facebook-stats {
+    margin: 10px 5px 10px 10px;
+  }
+  /* line 90, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .instagram-stats {
+    margin: 10px 5px 10px 5px;
+  }
+  /* line 93, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .twitter-stats {
+    margin: 10px 10px 10px 5px;
+  }
+  /* line 96, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .new-members,
+  .recent-activity {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 100, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .new-members img,
+  .recent-activity img {
+    padding-right: 15px;
+  }
+  /* line 104, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers,
+  #Dale-Byrd,
+  #Dawn-Wood,
+  #Dan-Oliver,
+  #Victoria-Chambers-recent-activity,
+  #Dale-Byrd-recent-activity,
+  #Dawn-Wood-recent-activity,
+  #Dan-Oliver-recent-activity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /* line 116, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers span,
+  #Dale-Byrd span,
+  #Dawn-Wood span,
+  #Dan-Oliver span,
+  #Victoria-Chambers-recent-activity span,
+  #Dale-Byrd-recent-activity span,
+  #Dawn-Wood-recent-activity span,
+  #Dan-Oliver-recent-activity span {
+    padding-left: 500px;
+    color: #7477bf;
+  }
+  /* line 121, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dan-Oliver-recent-activity span {
+    padding-left: 515px;
+  }
+  /* line 124, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers p,
+  #Dale-Byrd p,
+  #Dawn-Wood p,
+  #Dan-Oliver p {
+    text-align: left;
+  }
+  /* line 131, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers a {
+    padding-right: 16.625rem;
+  }
+  /* line 135, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dale-Byrd a,
+  #Dawn-Wood a {
+    padding-right: 21rem;
+  }
+  /* line 141, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dan-Oliver {
+    margin-bottom: 15px;
+  }
+  /* line 143, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dan-Oliver a {
+    padding-right: 20.375rem;
+  }
+  /* line 148, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers a,
+  #Dale-Byrd a,
+  #Dawn-Wood a,
+  #Dan-Oliver a {
+    display: inline;
+  }
+  /* line 155, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 160, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .recent-activity p {
+    text-align: left;
+  }
+  /* line 164, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #send-email-notifactions-header,
+  #set-profile-to-public-toggle {
+    padding-left: 5px;
+  }
+  /* line 168, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .settings-slider {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 174, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .header-container h1 {
+    padding-right: 42.25rem;
+  }
+  /* line 177, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .headline {
+    padding: 0;
+    margin: 0 auto;
+  }
+  /* line 182, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #alert-bar {
+    width: 88vw;
+  }
+  /* line 184, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #alert-bar p {
+    font-size: 15px;
+  }
+  /* line 188, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .new-members,
+  .recent-activity,
+  .message-user,
+  .settings {
+    width: 50%;
+    float: left;
+  }
+  /* line 195, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .daily-traffic,
+  .mobile-users {
+    width: 45.9vw;
+    float: left;
+  }
+  /* line 200, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .widget-container-traffic {
+    width: 90vw;
+    height: 340px;
+  }
+  /* line 204, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .widget-container-daily-traffic,
+  .widget-container-mobile-users {
+    width: 445px;
+    height: 200px;
+  }
+  /* line 209, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers,
+  #Dale-Byrd,
+  #Dawn-Wood,
+  #Dan-Oliver,
+  #Victoria-Chambers-recent-activity,
+  #Dale-Byrd-recent-activity,
+  #Dawn-Wood-recent-activity,
+  #Dan-Oliver-recent-activity {
+    flex-wrap: nowrap;
+  }
+  /* line 218, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers span,
+  #Dale-Byrd span,
+  #Dawn-Wood span,
+  #Dan-Oliver span,
+  #Victoria-Chambers-recent-activity span,
+  #Dale-Byrd-recent-activity span,
+  #Dawn-Wood-recent-activity span,
+  #Dan-Oliver-recent-activity span {
+    padding-left: 250px;
+  }
+  /* line 222, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dan-Oliver-recent-activity span {
+    padding-left: 265px;
+  }
+  /* line 225, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .new-members {
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+  }
+  /* line 229, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .recent-activity {
+    border-bottom: 1px solid #777777;
+  }
+  /* line 232, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Victoria-Chambers a {
+    padding-right: 0.625rem;
+  }
+  /* line 235, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dale-Byrd a,
+  #Dawn-Wood a {
+    padding-right: 5rem;
+  }
+  /* line 239, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dan-Oliver a {
+    padding-right: 4.375rem;
+  }
+  /* line 242, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  #Dan-Oliver-recent-activity {
+    padding-bottom: 15px;
+  }
+  /* line 245, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .message-user {
+    border-right: 1px solid #777777;
+  }
+  /* line 248, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .settings {
+    height: 274px;
+  }
+  /* line 251, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  .settings-buttons {
+    margin-top: 9px;
+  }
+  /* line 254, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  nav {
+    height: 104rem;
+  }
+}
+
+/* line 1, ../../../../Code/Project7/scss/components/_images.scss */
+#vcImage,
+#dbImage,
+#dwImage,
+#doImage {
+  border-radius: 50%;
+  width: 80px;
+}
+
+/* ===================================== */
+/*              Social Stats             */
+/* ===================================== */
+/* line 14, ../../../../Code/Project7/scss/components/_images.scss */
+.facebook-image,
+.instagram-image,
+.twitter-image {
+  width: 70px;
+  padding: 10px;
+  border: 0.1px solid #7477bf;
+  background-color: #7477bf;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

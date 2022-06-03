@@ -1,0 +1,257 @@
+@media (min-width: 768px) {
+  header {
+    height: 80px;
+  }
+  h3 {
+    padding-left: 5px;
+  }
+  body {
+    display: grid;
+  }
+  .grid-container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "nav main";
+  }
+  header {
+    display: flex;
+    h1 {
+      padding-left: 0.938rem;
+      padding-right: 26.25rem;
+    }
+  }
+  .dropdown-menu {
+    width: 200px;
+  }
+  .nav-container {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+  nav {
+    display: table-cell;
+    height: 148rem;
+    width: 90px;
+  }
+  .navigation {
+    display: inline;
+  }
+  .light-grey-tab {
+    width: 80%;
+  }
+  #alert-bar {
+    width: 85vw;
+    p {
+      font-size: 14px;
+    }
+  }
+  .traffic-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li,
+  button {
+    padding: 10px;
+  }
+  #traffic-header {
+    padding-left: 10px;
+  }
+  .traffic-nav {
+    padding-top: 0;
+  }
+  .widget-container-traffic {
+    width: 700px;
+    height: 300px;
+  }
+  .daily-traffic,
+  .mobile-users {
+    width: 43vw;
+    display: inline-block;
+  }
+  #daily-traffic-chart {
+    width: 240px;
+  }
+  .widget-container-daily-traffic,
+  .widget-container-mobile-users {
+   width: 320px;
+   height: 200px;
+  }
+  .daily-traffic {
+    border-right: 1px solid #cccccc;
+  }
+  .social-stats {
+    display: flex;
+  }
+  .facebook-stats {
+    margin: 10px 5px 10px 10px;
+  }
+  .instagram-stats {
+    margin: 10px 5px 10px 5px;
+  }
+  .twitter-stats {
+    margin: 10px 10px 10px 5px;
+  }
+  .new-members,
+  .recent-activity {
+    display: flex;
+    flex-direction: column;
+    img {
+      padding-right: 15px;
+    }
+  }
+  #Victoria-Chambers,
+  #Dale-Byrd,
+  #Dawn-Wood,
+  #Dan-Oliver,
+  #Victoria-Chambers-recent-activity,
+  #Dale-Byrd-recent-activity,
+  #Dawn-Wood-recent-activity,
+  #Dan-Oliver-recent-activity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    span {
+      padding-left: 500px;
+      color: $dark-purple;
+    }
+  }
+  #Dan-Oliver-recent-activity span {
+    padding-left: 515px;
+  }
+  #Victoria-Chambers p,
+  #Dale-Byrd p,
+  #Dawn-Wood p,
+  #Dan-Oliver p {
+    text-align: left;
+  }
+
+  #Victoria-Chambers a {
+    padding-right: 16.625rem;
+  }
+
+  #Dale-Byrd a,
+  #Dawn-Wood a {
+    padding-right: 21rem;
+  }
+
+
+  #Dan-Oliver {
+    margin-bottom: 15px;
+    a {
+      padding-right: 20.375rem;
+    }
+  }
+
+  #Victoria-Chambers a,
+  #Dale-Byrd a,
+  #Dawn-Wood a,
+  #Dan-Oliver a {
+    display: inline;
+  }
+
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .recent-activity p {
+    text-align: left;
+  }
+
+  #send-email-notifactions-header,
+  #set-profile-to-public-toggle {
+    padding-left: 5px;
+  }
+  .settings-slider {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container h1 {
+    padding-right: 42.25rem;
+  }
+  .headline {
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  #alert-bar {
+    width: 88vw;
+    p {
+      font-size: 15px;
+    }
+  }
+  .new-members,
+  .recent-activity,
+  .message-user,
+  .settings {
+    width: 50%;
+    float: left;
+  }
+  .daily-traffic,
+  .mobile-users {
+    width: 45.9vw;
+    float: left;
+  }
+  .widget-container-traffic {
+    width: 90vw;
+    height: 340px;
+  }
+  .widget-container-daily-traffic,
+  .widget-container-mobile-users {
+   width: 445px;
+   height: 200px;
+  }
+  #Victoria-Chambers,
+  #Dale-Byrd,
+  #Dawn-Wood,
+  #Dan-Oliver,
+  #Victoria-Chambers-recent-activity,
+  #Dale-Byrd-recent-activity,
+  #Dawn-Wood-recent-activity,
+  #Dan-Oliver-recent-activity {
+    flex-wrap: nowrap;
+    span {
+      padding-left: 250px;
+    }
+  }
+  #Dan-Oliver-recent-activity span {
+    padding-left: 265px;
+    }
+  .new-members {
+    border-right: 1px solid $grey-text;
+    border-bottom: 1px solid $grey-text;
+  }
+  .recent-activity {
+    border-bottom: 1px solid $grey-text;
+  }
+  #Victoria-Chambers a {
+    padding-right: 0.625rem;
+  }
+  #Dale-Byrd a,
+  #Dawn-Wood a {
+    padding-right: 5rem;
+  }
+  #Dan-Oliver a {
+    padding-right: 4.375rem;
+  }
+  #Dan-Oliver-recent-activity {
+    padding-bottom: 15px;
+  }
+  .message-user {
+    border-right: 1px solid $grey-text;
+  }
+  .settings {
+    height: 274px;
+  }
+  .settings-buttons {
+    margin-top: 9px;
+  }
+  nav {
+    height: 104rem;
+  }
+}

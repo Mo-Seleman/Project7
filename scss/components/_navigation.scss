@@ -1,0 +1,33 @@
+nav {
+    grid-area: nav;
+    background-color: $light-purple;
+    display: flex;
+    max-height: 60px;
+}
+
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+        a {
+            display: flex;
+            flex-grow: 1;
+            padding: 15px;
+            height: 4rem;
+            justify-content: center;
+        }
+}
+
+.traffic-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    :first-child {
+      background-color: #81c98f;
+      color: white;
+      border-radius: 30px;
+    }
+  }

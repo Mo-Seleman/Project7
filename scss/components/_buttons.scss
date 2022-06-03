@@ -1,0 +1,51 @@
+button:not(.traffic-nav-link) {
+    background-color: $dark-purple;
+    border: none;
+    color: white;
+}
+#bellIcon:hover {
+    fill: green;
+}
+/* ===================================== */
+/*             Navigation Btn            */
+/* ===================================== */
+button[id="traffic-nav-link"] {
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	outline: inherit;
+}
+/* ===================================== */
+/*             Message User              */
+/* ===================================== */
+#message-user-button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #d1d1d1;
+    background-color: $dark-purple;
+    color: white;
+}
+.settings-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#save-button,
+#cancel-button {
+    width: 48%;
+    height: 40px;
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+#save-button{
+    background-color: $dark-purple;
+    color: white;
+}
+
+#cancel-button {
+    background-color: #999999;
+    color: white;
+}

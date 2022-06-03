@@ -1,0 +1,23 @@
+#vcImage,
+#dbImage,
+#dwImage,
+#doImage
+ {
+    border-radius: 50%;
+    width: 80px;
+}
+
+/* ===================================== */
+/*              Social Stats             */
+/* ===================================== */
+
+.facebook-image,
+.instagram-image,
+.twitter-image {
+   width: 70px;
+   padding: 10px;
+   border: 0.1px solid $dark-purple;
+   background-color: $dark-purple;
+   border-radius: 50%;
+   margin: 10px;
+}

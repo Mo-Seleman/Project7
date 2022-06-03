@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Anonymous Pro", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-purple;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  height: 60px;
+  background-color: $dark-purple;
+  color: white;
+  display: grid;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 2fr;
+  align-items: center;
+}
+
+header span {
+  font-weight: 100;
+}
+
+#bellIcon {
+  width: 25px;
+  justify-self: center;
+}
+
+.bellIconContainer {
+  margin: auto;
+:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s;
+ }
+}
+
+#header-img {
+  width: 40px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+header h1 {
+  justify-self: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 grey,
+    1px 1px 0 grey;
+}
+
+.studentName {
+  justify-self: center;
+  font-size: 13.5px;
+}
+
+hr {
+  margin: 25px;
+}
+
+/* ================================================================ */
+/*                               Body                               */
+/* ================================================================ */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headline {
+  padding: 0 10px;
+}
+
+.light-grey-tab {
+  background-color: $grey-theme;
+  border: 1px solid #cfcfcf;
+  width: 57%;
+  height: 50px;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-purple;
+  color: white;
+  width: 90vw;
+  margin: 10px auto 0 auto;
+  padding: 8px;
+  border-radius: 7px;
+  p {
+    font-size: 13px;
+  }
+}
+
+.traffic {
+  padding: 10px;
+}
+.traffic,
+.daily-traffic,
+.mobile-users {
+  border-bottom: 1px solid #cccccc;
+}
+
+.daily-traffic {
+  padding: 0 10px 10px 10px;
+}
+
+.daily-traffic {
+  h3 {
+    padding: 10px 0;
+  }
+}
+.mobile-users {
+  padding: 10px;
+  h3 {
+padding-bottom: 10px;
+
+  }
+}
+.socialStatsH3 {
+  padding: 10px 0 0 10px;
+}
+
+.new-members,
+.recent-activity,
+.message-user,
+.settings {
+  border-top: 1px solid #cccccc;
+  padding: 10px;
+}
+
+/* ============================================= */
+/*                  Charts                       */
+/* ============================================= */
+.widget-container-traffic,
+.widget-container-daily-traffic,
+.widget-container-mobile-users {
+  width: 93vw;
+  height: 150px;
+}
+
+/* ===================================== */
+/*              Social Stats             */
+/* ===================================== */
+.facebook-stats,
+.instagram-stats,
+.twitter-stats {
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: $grey-theme;
+  display: flex;
+  align-items: center;
+}
+
+#facebook-text-header,
+#instagram-text-header,
+#twitter-text-header {
+  font-size: 1.25rem;
+  color: $dark-purple;
+}
+
+#facebook-text-number,
+#instagram-text-number,
+#twitter-text-number {
+  font-size: 2rem;
+  color: $grey-text;
+}
+
+/* ===================================== */
+/*      New Members/Recent Activity      */
+/* ===================================== */
+
+.styleTag {
+  text-align: center;
+}
+
+#new-members-header,
+#recent-activity-header {
+  margin-bottom: 15px;
+}
+
+#Victoria-Chambers a,
+#Dale-Byrd a,
+#Dawn-Wood a,
+#Dan-Oliver a {
+  display: block;
+}
+
+/* ===================================== */
+/*                Settings               */
+/* ===================================== */
+#send-email-notifactions-header {
+  padding-right: 15px;
+}
+#set-profile-to-public-toggle {
+  padding-right: 40px;
+
+/* ===================================== */
+/*             Dropdown Menu             */
+/* ===================================== */}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .5rem);
+  background-color: $grey-theme;
+  color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  width: 150px;
+  border-radius: 5px;
+  p {
+    font-size: 12px;
+  }
+  img {
+    padding: 4px;
+  }
+}
+
+.vcDrop, 
+.dbDrop {
+  display: flex;
+  align-items: center;
+}
+.dbDrop {
+  border-top: 1px solid $grey-text;
+}
+/* { outline: none; } */
+#bellIcon:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
