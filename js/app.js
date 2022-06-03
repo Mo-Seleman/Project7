@@ -212,3 +212,18 @@ document.addEventListener("click", function (e) {
 }
 
 autocomplete(document.getElementById("message-user-message"), userNames);
+
+/* ==================================== */
+/*               Settings               */
+/* ==================================== */
+const saveBtn = document.querySelector("#save-button");
+
+saveBtn.onclick = function () {
+const emailOnOff = document.getElementById("settingsCheckboxEmail").checked;
+const profileOnOff = document.getElementById("settingsCheckboxProfile").checked;
+const timezone = document.getElementById("Timezones").value;
+localStorage.setItem("Send Email Notifications?", emailOnOff);
+localStorage.setItem("Set Profile to Public?", profileOnOff);
+localStorage.setItem("Timezone", timezone);
+};
+
