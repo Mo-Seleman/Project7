@@ -123,22 +123,22 @@ sendButton.addEventListener("click", (e) => {
 function updateChartOriginal () {
   trafficChart.data.datasets[0].data = [750, 1200, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500],
   trafficChart.update();
-};
+}
 
 function updateChart () {
   trafficChart.data.datasets[0].data = [550, 1700, 900, 1500, 500, 1270, 1850, 900, 1250, 1800, 2000];
   trafficChart.update();
-};
+}
 
 function updateChart2 () {
   trafficChart.data.datasets[0].data = [2000, 1230, 1900, 500, 2500, 600, 1050, 1900, 2250, 800, 1000];
   trafficChart.update();
-};
+}
 
 function updateChart3 () {
   trafficChart.data.datasets[0].data = [1050, 1800, 900, 1400, 500, 1270, 1950, 1900, 2250, 2000, 1200];
   trafficChart.update();
-};
+}
 
 /* ==================================== */
 /*          AutoComplete Search         */
@@ -227,3 +227,4 @@ localStorage.setItem("Set Profile to Public?", profileOnOff);
 localStorage.setItem("Timezone", timezone);
 location.reload();
 };
+

@@ -330,7 +330,7 @@ button:not(.traffic-nav-link) {
 /*             Navigation Btn            */
 /* ===================================== */
 /* line 15, ../../../../Code/Project7/scss/components/_buttons.scss */
-button[id="traffic-nav-link"] {
+button[class="traffic-nav-link"] {
   color: inherit;
   border: none;
   font: inherit;
@@ -338,7 +338,7 @@ button[id="traffic-nav-link"] {
 }
 
 /* line 20, ../../../../Code/Project7/scss/components/_buttons.scss */
-button[id="traffic-nav-link"]:hover {
+button[class="traffic-nav-link"]:hover {
   background-color: #81c98f;
   color: white;
   border-radius: 30px;
@@ -871,10 +871,10 @@ main {
 }
 
 /* line 1, ../../../../Code/Project7/scss/components/_images.scss */
-#vcImage,
-#dbImage,
-#dwImage,
-#doImage {
+.vcImage,
+.dbImage,
+.dwImage,
+.doImage {
   border-radius: 50%;
   width: 80px;
 }

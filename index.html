@@ -27,11 +27,11 @@
             </svg>
             <div class="dropdown-menu">
                 <div class="vcDrop">
-                  <img src="images/member-1.jpg" alt="Victoria Chambers" width="50px">
+                  <img src="images/member-1.jpg" alt="Victoria Chambers" style="width: 50px;">
                   <p>Victoria Chambers Has Joined</p>
                 </div>
                 <div class="dbDrop">
-                <img src="images/member-2.jpg" alt="Dale Byrd" width="50px">
+                <img src="images/member-2.jpg" alt="Dale Byrd" style="width: 50px;">
                 <p>Dale Byrd Has Joined</p>
               </div>
            </div>
@@ -67,12 +67,12 @@
     <div class="traffic">
       <div class="traffic-info">
         <h3 id="traffic-header">TRAFFIC</h3>
-        <ul class="traffic-nav">
-            <button id="traffic-nav-link" class="btn btn-success" onclick="updateChartOriginal()">Hourly</button>
-            <button id="traffic-nav-link" class="btn btn-success" onclick="updateChart()">Daily</button>
-            <button id="traffic-nav-link" class="btn btn-success" onclick="updateChart2()">Weekly</button>
-            <button id="traffic-nav-link" class="btn btn-success" onclick="updateChart3()">Monthly</button>
-        </ul>
+        <div class="traffic-nav">
+            <button class="traffic-nav-link" onclick="updateChartOriginal()">Hourly</button>
+            <button class="traffic-nav-link" onclick="updateChart()">Daily</button>
+            <button class="traffic-nav-link" onclick="updateChart2()">Weekly</button>
+            <button class="traffic-nav-link" onclick="updateChart3()">Monthly</button>
+        </div>
       </div>
         <div class="widget-container-traffic">
                 <!-- element line graph will attach to -->
@@ -139,22 +139,22 @@
     <section class="new-members" id="new-members">
         <h3 id="new-members-header">NEW MEMBERS</h3>
         <div id="Victoria-Chambers" class="styleTag">
-          <img id="vcImage"src="images/member-1.jpg" alt="Image of Victoria Chambers">
+          <img class="vcImage" src="images/member-1.jpg" alt="Image of Victoria Chambers">
           <p>Victoria Chambers <br> <a href="mailto:">victoria.chambers80@example.com</a> 10/15/20</p>
         </div>
     <hr>
         <div id="Dale-Byrd" class="styleTag">
-          <img id="dbImage" src="images/member-2.jpg" alt="Image of Dale Byrd">
+          <img class="dbImage" src="images/member-2.jpg" alt="Image of Dale Byrd">
           <p>Dale Byrd <br> <a href="mailto:">dale.byrd52@example.com</a> 10/15/20</p>
         </div>
     <hr>
         <div id="Dawn-Wood" class="styleTag">
-          <img id="dwImage" src="images/member-3.jpg" alt="Image of Dawn Wood">
+          <img class="dwImage" src="images/member-3.jpg" alt="Image of Dawn Wood">
           <p>Dawn Wood <br> <a href="mailto:">dawn.wood16@example.com</a> 10/15/20</p>
         </div>
     <hr>
         <div id="Dan-Oliver" class="styleTag">
-          <img id="doImage" src="images/member-4.jpg" alt="Image of Dan Oliver">
+          <img class="doImage" src="images/member-4.jpg" alt="Image of Dan Oliver">
           <p>Dan Oliver <br> <a href="mailto:">dan.oliver82@exmaple.com</a> 10/15/20</p>
         </div>
     </section>
@@ -162,23 +162,23 @@
     <section class="recent-activity">
     <h3 id="recent-activity-header">RECENT ACTIVITY</h3>
         <div id="Victoria-Chambers-recent-activity" class="styleTag">
-            <img id="vcImage"src="images/member-1.jpg" alt="Image of Victoria Chambers">
+            <img class="vcImage" src="images/member-1.jpg" alt="Image of Victoria Chambers">
             <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong><br> 4 hours ago <span>></span></p>
         </div>
 <hr>
         <div id="Dale-Byrd-recent-activity" class="styleTag">
-            <img id="dbImage"src="images/member-2.jpg" alt="Image of Dale Byrd">
+            <img class="dbImage" src="images/member-2.jpg" alt="Image of Dale Byrd">
             <p>Dale Byrd liked the post <strong class="strong">Facebook's Changes for 2021</strong><br> 5 hours ago <span>></span></p>
         </div>
 <hr>
         <div id="Dawn-Wood-recent-activity" class="styleTag">
-            <img id="dwImage" src="images/member-3.jpg" alt="Image of Dawn Wood">
+            <img class="dwImage" src="images/member-3.jpg" alt="Image of Dawn Wood">
             <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong><br> 5 hours ago <span>></span></p>
         </div>
 <hr>
 
         <div id="Dan-Oliver-recent-activity" class="styleTag">
-            <img id="doImage" src="images/member-4.jpg" alt="Image of Dan Oliver">
+            <img class="doImage" src="images/member-4.jpg" alt="Image of Dan Oliver">
             <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong><br> 1 day ago <span>></span></p>
         </div>
 
@@ -191,7 +191,7 @@
         <input id="message-user-search" type="text" placeholder="Search for User">
       </div>
         <!-- <input type="text" name="" id="message-user-search" placeholder="Search for User"> -->
-        <textarea name="" id="message-user-message" cols="30" rows="10" placeholder="Message for User"></textarea>
+        <textarea id="message-user-message" cols="30" rows="10" placeholder="Message for User"></textarea>
         <button type="submit" id="message-user-button">SEND</button>
     </form>
 </section>
