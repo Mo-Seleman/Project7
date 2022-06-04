@@ -36,14 +36,15 @@ header span {
 #bellIcon {
   width: 25px;
   justify-self: center;
+  transition: transform .3s;
+}
+
+#bellIcon:hover {
+  transform: scale(1.2);
 }
 
 .bellIconContainer {
   margin: auto;
-:hover {
-  transform: scale(1.2);
-  transition: transform 0.1s;
- }
 }
 
 #header-img {

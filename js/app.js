@@ -110,10 +110,14 @@ sendButton.addEventListener("click", (e) => {
   if (searchForUser.value === "" && messageForUser.value === "") {
     alert("Error: No User Selected & Message Field Empty");
   } else if (searchForUser.value === "") {
+    e.preventDefault();
     alert("Error: No User Selected");
   } else if (messageForUser.value === "") {
+    e.preventDefault();
     alert("Error: Message Field Empty");
   } else alert("Message Sent!");
+  searchForUser.value = null;
+  messageForUser.value = null;
  }
 );
 
@@ -211,12 +215,13 @@ document.addEventListener("click", function (e) {
 });
 }
 
-autocomplete(document.getElementById("message-user-message"), userNames);
+autocomplete(document.getElementById("message-user-search"), userNames);
 
 /* ==================================== */
 /*               Settings               */
 /* ==================================== */
 const saveBtn = document.querySelector("#save-button");
+const cancelBtn = document.querySelector("#cancel-button");
 
 saveBtn.onclick = function () {
 const emailOnOff = document.getElementById("settingsCheckboxEmail").checked;
@@ -226,5 +231,17 @@ localStorage.setItem("Send Email Notifications?", emailOnOff);
 localStorage.setItem("Set Profile to Public?", profileOnOff);
 localStorage.setItem("Timezone", timezone);
 location.reload();
-};
+}
 
+cancelBtn.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+})
+
+/* ==================================== */
+/*             Local Storage            */
+/* ==================================== */
+for (let i = 0; i < localStorage.length; i++) {
+  const key = localStorage.key(i);
+  console.log(`${key}: ${localStorage.getItem(key)}`);
+}

@@ -43,39 +43,39 @@ header span {
 #bellIcon {
   width: 25px;
   justify-self: center;
+  transition: transform .3s;
 }
 
-/* line 41, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 42, ../../../../Code/Project7/scss/base/_typography.scss */
+#bellIcon:hover {
+  transform: scale(1.2);
+}
+
+/* line 46, ../../../../Code/Project7/scss/base/_typography.scss */
 .bellIconContainer {
   margin: auto;
 }
 
-/* line 43, ../../../../Code/Project7/scss/base/_typography.scss */
-.bellIconContainer :hover {
-  transform: scale(1.2);
-  transition: transform 0.1s;
-}
-
-/* line 49, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 50, ../../../../Code/Project7/scss/base/_typography.scss */
 #header-img {
   width: 40px;
   border-radius: 50%;
   justify-self: center;
 }
 
-/* line 55, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 56, ../../../../Code/Project7/scss/base/_typography.scss */
 header h1 {
   justify-self: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
-/* line 61, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 62, ../../../../Code/Project7/scss/base/_typography.scss */
 .studentName {
   justify-self: center;
   font-size: 13.5px;
 }
 
-/* line 66, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 67, ../../../../Code/Project7/scss/base/_typography.scss */
 hr {
   margin: 25px;
 }
@@ -83,19 +83,19 @@ hr {
 /* ================================================================ */
 /*                               Body                               */
 /* ================================================================ */
-/* line 74, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 75, ../../../../Code/Project7/scss/base/_typography.scss */
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 80, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 81, ../../../../Code/Project7/scss/base/_typography.scss */
 .headline {
   padding: 0 10px;
 }
 
-/* line 84, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 85, ../../../../Code/Project7/scss/base/_typography.scss */
 .light-grey-tab {
   background-color: #f5f5f5;
   border: 1px solid #cfcfcf;
@@ -103,7 +103,7 @@ hr {
   height: 50px;
 }
 
-/* line 91, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 92, ../../../../Code/Project7/scss/base/_typography.scss */
 .alert {
   display: flex;
   justify-content: space-between;
@@ -116,12 +116,12 @@ hr {
   border-radius: 7px;
 }
 
-/* line 101, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 102, ../../../../Code/Project7/scss/base/_typography.scss */
 .alert p {
   font-size: 13px;
 }
 
-/* line 106, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 107, ../../../../Code/Project7/scss/base/_typography.scss */
 .trafficSelect {
   background-color: #81c98f;
   color: white;
@@ -129,44 +129,44 @@ hr {
   padding: 7px;
 }
 
-/* line 113, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 114, ../../../../Code/Project7/scss/base/_typography.scss */
 .traffic {
   padding: 10px;
 }
 
-/* line 116, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 117, ../../../../Code/Project7/scss/base/_typography.scss */
 .traffic,
 .daily-traffic,
 .mobile-users {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 122, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 123, ../../../../Code/Project7/scss/base/_typography.scss */
 .daily-traffic {
   padding: 0 10px 10px 10px;
 }
 
-/* line 127, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 128, ../../../../Code/Project7/scss/base/_typography.scss */
 .daily-traffic h3 {
   padding: 10px 0;
 }
 
-/* line 131, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 132, ../../../../Code/Project7/scss/base/_typography.scss */
 .mobile-users {
   padding: 10px;
 }
 
-/* line 133, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 134, ../../../../Code/Project7/scss/base/_typography.scss */
 .mobile-users h3 {
   padding-bottom: 10px;
 }
 
-/* line 138, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 139, ../../../../Code/Project7/scss/base/_typography.scss */
 .socialStatsH3 {
   padding: 10px 0 0 10px;
 }
 
-/* line 142, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 143, ../../../../Code/Project7/scss/base/_typography.scss */
 .new-members,
 .recent-activity,
 .message-user,
@@ -178,7 +178,7 @@ hr {
 /* ============================================= */
 /*                  Charts                       */
 /* ============================================= */
-/* line 153, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 154, ../../../../Code/Project7/scss/base/_typography.scss */
 .widget-container-traffic,
 .widget-container-daily-traffic,
 .widget-container-mobile-users {
@@ -189,7 +189,7 @@ hr {
 /* ===================================== */
 /*              Social Stats             */
 /* ===================================== */
-/* line 163, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 164, ../../../../Code/Project7/scss/base/_typography.scss */
 .facebook-stats,
 .instagram-stats,
 .twitter-stats {
@@ -202,7 +202,7 @@ hr {
   align-items: center;
 }
 
-/* line 175, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 176, ../../../../Code/Project7/scss/base/_typography.scss */
 #facebook-text-header,
 #instagram-text-header,
 #twitter-text-header {
@@ -210,7 +210,7 @@ hr {
   color: #7477bf;
 }
 
-/* line 182, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 183, ../../../../Code/Project7/scss/base/_typography.scss */
 #facebook-text-number,
 #instagram-text-number,
 #twitter-text-number {
@@ -221,18 +221,18 @@ hr {
 /* ===================================== */
 /*      New Members/Recent Activity      */
 /* ===================================== */
-/* line 193, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 194, ../../../../Code/Project7/scss/base/_typography.scss */
 .styleTag {
   text-align: center;
 }
 
-/* line 197, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 198, ../../../../Code/Project7/scss/base/_typography.scss */
 #new-members-header,
 #recent-activity-header {
   margin-bottom: 15px;
 }
 
-/* line 202, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 203, ../../../../Code/Project7/scss/base/_typography.scss */
 #Victoria-Chambers a,
 #Dale-Byrd a,
 #Dawn-Wood a,
@@ -243,12 +243,12 @@ hr {
 /* ===================================== */
 /*                Settings               */
 /* ===================================== */
-/* line 212, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 213, ../../../../Code/Project7/scss/base/_typography.scss */
 #send-email-notifactions-header {
   padding-right: 15px;
 }
 
-/* line 215, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 216, ../../../../Code/Project7/scss/base/_typography.scss */
 #set-profile-to-public-toggle {
   padding-right: 40px;
   /* ===================================== */
@@ -256,12 +256,12 @@ hr {
   /* ===================================== */
 }
 
-/* line 221, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 222, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown {
   position: relative;
 }
 
-/* line 225, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 226, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu {
   position: absolute;
   left: 0;
@@ -276,35 +276,35 @@ hr {
   border-radius: 5px;
 }
 
-/* line 237, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 238, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu p {
   font-size: 12px;
 }
 
-/* line 240, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 241, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu img {
   padding: 4px;
 }
 
-/* line 245, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 246, ../../../../Code/Project7/scss/base/_typography.scss */
 .vcDrop,
 .dbDrop {
   display: flex;
   align-items: center;
 }
 
-/* line 250, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 251, ../../../../Code/Project7/scss/base/_typography.scss */
 .dbDrop {
   border-top: 1px solid #777777;
 }
 
-/* line 253, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 254, ../../../../Code/Project7/scss/base/_typography.scss */
 .dropdown-menu {
   pointer-events: none;
 }
 
 /* { outline: none; } */
-/* line 257, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 258, ../../../../Code/Project7/scss/base/_typography.scss */
 #bellIcon:focus + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
@@ -621,62 +621,66 @@ main {
     padding-left: 10px;
   }
   /* line 61, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  button[class="traffic-nav-link"]:hover {
+    padding: revert;
+  }
+  /* line 64, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .traffic-nav {
     padding-top: 0;
   }
-  /* line 64, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 67, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .widget-container-traffic {
     width: 700px;
     height: 300px;
   }
-  /* line 68, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 71, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .daily-traffic,
   .mobile-users {
     width: 43vw;
     display: inline-block;
   }
-  /* line 73, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 76, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #daily-traffic-chart {
     width: 240px;
   }
-  /* line 76, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 79, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .widget-container-daily-traffic,
   .widget-container-mobile-users {
     width: 320px;
     height: 200px;
   }
-  /* line 81, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 84, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .daily-traffic {
     border-right: 1px solid #cccccc;
   }
-  /* line 84, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 87, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .social-stats {
     display: flex;
   }
-  /* line 87, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 90, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .facebook-stats {
     margin: 10px 5px 10px 10px;
   }
-  /* line 90, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 93, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .instagram-stats {
     margin: 10px 5px 10px 5px;
   }
-  /* line 93, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 96, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .twitter-stats {
     margin: 10px 10px 10px 5px;
   }
-  /* line 96, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 99, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .new-members,
   .recent-activity {
     display: flex;
     flex-direction: column;
   }
-  /* line 100, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 103, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .new-members img,
   .recent-activity img {
     padding-right: 15px;
   }
-  /* line 104, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 107, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers,
   #Dale-Byrd,
   #Dawn-Wood,
@@ -690,7 +694,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
   }
-  /* line 116, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 119, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers span,
   #Dale-Byrd span,
   #Dawn-Wood span,
@@ -702,80 +706,80 @@ main {
     padding-left: 500px;
     color: #7477bf;
   }
-  /* line 121, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 124, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dan-Oliver-recent-activity span {
     padding-left: 515px;
   }
-  /* line 124, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 127, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers p,
   #Dale-Byrd p,
   #Dawn-Wood p,
   #Dan-Oliver p {
     text-align: left;
   }
-  /* line 131, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 134, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers a {
     padding-right: 16.625rem;
   }
-  /* line 135, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 138, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dale-Byrd a,
   #Dawn-Wood a {
     padding-right: 21rem;
   }
-  /* line 141, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 144, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dan-Oliver {
     margin-bottom: 15px;
   }
-  /* line 143, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 146, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dan-Oliver a {
     padding-right: 20.375rem;
   }
-  /* line 148, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 151, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers a,
   #Dale-Byrd a,
   #Dawn-Wood a,
   #Dan-Oliver a {
     display: inline;
   }
-  /* line 155, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 158, ../../../../Code/Project7/scss/components/_media-queries.scss */
   hr {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 160, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 163, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .recent-activity p {
     text-align: left;
   }
-  /* line 164, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 167, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #send-email-notifactions-header,
   #set-profile-to-public-toggle {
     padding-left: 5px;
   }
-  /* line 168, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 171, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .settings-slider {
     max-width: 100px;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 174, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 177, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .header-container h1 {
     padding-right: 42.25rem;
   }
-  /* line 177, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 180, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .headline {
     padding: 0;
     margin: 0 auto;
   }
-  /* line 182, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 185, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #alert-bar {
     width: 88vw;
   }
-  /* line 184, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 187, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #alert-bar p {
     font-size: 15px;
   }
-  /* line 188, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 191, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .new-members,
   .recent-activity,
   .message-user,
@@ -783,24 +787,24 @@ main {
     width: 50%;
     float: left;
   }
-  /* line 195, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 198, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .daily-traffic,
   .mobile-users {
     width: 45.9vw;
     float: left;
   }
-  /* line 200, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 203, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .widget-container-traffic {
     width: 90vw;
     height: 340px;
   }
-  /* line 204, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 207, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .widget-container-daily-traffic,
   .widget-container-mobile-users {
     width: 445px;
     height: 200px;
   }
-  /* line 209, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 212, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers,
   #Dale-Byrd,
   #Dawn-Wood,
@@ -811,7 +815,7 @@ main {
   #Dan-Oliver-recent-activity {
     flex-wrap: nowrap;
   }
-  /* line 218, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 221, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers span,
   #Dale-Byrd span,
   #Dawn-Wood span,
@@ -822,49 +826,49 @@ main {
   #Dan-Oliver-recent-activity span {
     padding-left: 250px;
   }
-  /* line 222, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 225, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dan-Oliver-recent-activity span {
     padding-left: 265px;
   }
-  /* line 225, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 228, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .new-members {
     border-right: 1px solid #777777;
     border-bottom: 1px solid #777777;
   }
-  /* line 229, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 232, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .recent-activity {
     border-bottom: 1px solid #777777;
   }
-  /* line 232, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 235, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Victoria-Chambers a {
     padding-right: 0.625rem;
   }
-  /* line 235, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 238, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dale-Byrd a,
   #Dawn-Wood a {
     padding-right: 5rem;
   }
-  /* line 239, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 242, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dan-Oliver a {
     padding-right: 4.375rem;
   }
-  /* line 242, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 245, ../../../../Code/Project7/scss/components/_media-queries.scss */
   #Dan-Oliver-recent-activity {
     padding-bottom: 15px;
   }
-  /* line 245, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 248, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .message-user {
     border-right: 1px solid #777777;
   }
-  /* line 248, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 251, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .settings {
     height: 274px;
   }
-  /* line 251, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 254, ../../../../Code/Project7/scss/components/_media-queries.scss */
   .settings-buttons {
     margin-top: 9px;
   }
-  /* line 254, ../../../../Code/Project7/scss/components/_media-queries.scss */
+  /* line 257, ../../../../Code/Project7/scss/components/_media-queries.scss */
   nav {
     height: 104rem;
   }

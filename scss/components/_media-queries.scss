@@ -58,6 +58,9 @@
   #traffic-header {
     padding-left: 10px;
   }
+  button[class="traffic-nav-link"]:hover {
+    padding: revert;
+  }
   .traffic-nav {
     padding-top: 0;
   }
