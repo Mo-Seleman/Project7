@@ -114,9 +114,7 @@ hr {
 .traffic {
   padding: 10px;
 }
-.traffic,
-.daily-traffic,
-.mobile-users {
+.traffic {
   border-bottom: 1px solid #cccccc;
 }
 
@@ -136,8 +134,12 @@ padding-bottom: 10px;
 
   }
 }
+.daily-traffic {
+    border-bottom: 1px solid #cccccc;
+  }
 .socialStatsH3 {
   padding: 10px 0 0 10px;
+  border-top: 1px solid #cccccc;
 }
 
 .new-members,
@@ -198,6 +200,9 @@ padding-bottom: 10px;
 #new-members-header,
 #recent-activity-header {
   margin-bottom: 15px;
+}
+.arrows {
+  display: none;
 }
 
 #Victoria-Chambers a,

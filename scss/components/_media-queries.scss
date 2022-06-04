@@ -83,6 +83,7 @@
   }
   .daily-traffic {
     border-right: 1px solid #cccccc;
+    border-bottom: none;
   }
   .social-stats {
     display: flex;
@@ -104,6 +105,10 @@
       padding-right: 15px;
     }
   }
+  .arrows {
+    display: initial;
+  }
+
   #Victoria-Chambers,
   #Dale-Byrd,
   #Dawn-Wood,
@@ -199,6 +204,11 @@
   .mobile-users {
     width: 45.9vw;
     float: left;
+    border-bottom: 1px solid #cccccc;
+  }
+  .socialStatsH3 {
+    border-top: none;
+    padding-top: 260px;
   }
   .widget-container-traffic {
     width: 90vw;
@@ -255,6 +265,6 @@
     margin-top: 9px;
   }
   nav {
-    height: 104rem;
+    height: 105rem;
   }
 }
