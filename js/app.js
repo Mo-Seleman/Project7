@@ -259,10 +259,10 @@ if (localStorage.getItem("Send Email Notifications?") === "true") {
 if (localStorage.getItem("Set Profile to Public?") === "true") {
   settingsCheckboxProfile.checked = true;
 }
+if (localStorage.getItem("Timezone")) {
+  Timezones.value = localStorage.getItem("Timezone");
+} else {
+  Timezones.selectedIndex = 0;
+}
 
-Timezones.value = localStorage.getItem("Timezone");
-
-/* ==================================== */
-/*             Local Storage            */
-/* ==================================== */
 
