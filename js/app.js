@@ -118,83 +118,96 @@ sendButton.addEventListener("click", (e) => {
   } else alert("Message Sent!");
   searchForUser.value = null;
   messageForUser.value = null;
- }
-);
+});
 
 /* ==================================== */
 /*             Traffic Nav              */
 /* ==================================== */
-function updateChartOriginal () {
-  trafficChart.data.datasets[0].data = [750, 1200, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500],
+function updateChartOriginal() {
+  (trafficChart.data.datasets[0].data = [
+    750, 1200, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500,
+  ]),
+    trafficChart.update();
+}
+
+function updateChart() {
+  trafficChart.data.datasets[0].data = [
+    550, 1700, 900, 1500, 500, 1270, 1850, 900, 1250, 1800, 2000,
+  ];
   trafficChart.update();
 }
 
-function updateChart () {
-  trafficChart.data.datasets[0].data = [550, 1700, 900, 1500, 500, 1270, 1850, 900, 1250, 1800, 2000];
+function updateChart2() {
+  trafficChart.data.datasets[0].data = [
+    2000, 1230, 1900, 500, 2500, 600, 1050, 1900, 2250, 800, 1000,
+  ];
   trafficChart.update();
 }
 
-function updateChart2 () {
-  trafficChart.data.datasets[0].data = [2000, 1230, 1900, 500, 2500, 600, 1050, 1900, 2250, 800, 1000];
-  trafficChart.update();
-}
-
-function updateChart3 () {
-  trafficChart.data.datasets[0].data = [1050, 1800, 900, 1400, 500, 1270, 1950, 1900, 2250, 2000, 1200];
+function updateChart3() {
+  trafficChart.data.datasets[0].data = [
+    1050, 1800, 900, 1400, 500, 1270, 1950, 1900, 2250, 2000, 1200,
+  ];
   trafficChart.update();
 }
 
 /* ==================================== */
 /*          AutoComplete Search         */
 /* ==================================== */
- let userNames = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
+let userNames = ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver"];
 
- function autocomplete(inp, arr) {
+function autocomplete(inp, arr) {
   var currentFocus;
-  searchForUser.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      this.parentNode.appendChild(a);
-      for (i = 0; i < arr.length; i++) {
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          b = document.createElement("DIV");
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-              b.addEventListener("click", function(e) {
-              inp.value = this.getElementsByTagName("input")[0].value;
-              closeAllLists();
-          });
-          a.appendChild(b);
-        }
+  searchForUser.addEventListener("input", function (e) {
+    var a,
+      b,
+      i,
+      val = this.value;
+    closeAllLists();
+    if (!val) {
+      return false;
+    }
+    currentFocus = -1;
+    a = document.createElement("DIV");
+    a.setAttribute("id", this.id + "autocomplete-list");
+    a.setAttribute("class", "autocomplete-items");
+    this.parentNode.appendChild(a);
+    for (i = 0; i < arr.length; i++) {
+      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+        b = document.createElement("DIV");
+        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+        b.innerHTML += arr[i].substr(val.length);
+        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+        b.addEventListener("click", function (e) {
+          inp.value = this.getElementsByTagName("input")[0].value;
+          closeAllLists();
+        });
+        a.appendChild(b);
       }
+    }
   });
-  searchForUser.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        currentFocus++;
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        currentFocus--;
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        e.preventDefault();
-        if (currentFocus > -1) {
-          if (x) x[currentFocus].click();
-        }
+  searchForUser.addEventListener("keydown", function (e) {
+    var x = document.getElementById(this.id + "autocomplete-list");
+    if (x) x = x.getElementsByTagName("div");
+    if (e.keyCode == 40) {
+      currentFocus++;
+      addActive(x);
+    } else if (e.keyCode == 38) {
+      //up
+      currentFocus--;
+      addActive(x);
+    } else if (e.keyCode == 13) {
+      e.preventDefault();
+      if (currentFocus > -1) {
+        if (x) x[currentFocus].click();
       }
+    }
   });
   function addActive(x) {
     if (!x) return false;
     removeActive(x);
     if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
+    if (currentFocus < 0) currentFocus = x.length - 1;
     x[currentFocus].classList.add("autocomplete-active");
   }
   function removeActive(x) {
@@ -206,42 +219,50 @@ function updateChart3 () {
     var x = document.getElementsByClassName("autocomplete-items");
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
-      x[i].parentNode.removeChild(x[i]);
+        x[i].parentNode.removeChild(x[i]);
+      }
     }
   }
-}
-document.addEventListener("click", function (e) {
+  document.addEventListener("click", function (e) {
     closeAllLists(e.target);
-});
+  });
 }
 
 autocomplete(document.getElementById("message-user-search"), userNames);
 
-/* ==================================== */
-/*               Settings               */
-/* ==================================== */
+/* ========================================= */
+/*             Settings/Local Storage        */
+/* ==========================================*/
 const saveBtn = document.querySelector("#save-button");
 const cancelBtn = document.querySelector("#cancel-button");
+const settingsCheckboxEmail = document.getElementById("settingsCheckboxEmail");
+const settingsCheckboxProfile = document.getElementById("settingsCheckboxProfile");
+const Timezones = document.getElementById("Timezones");
 
 saveBtn.onclick = function () {
-const emailOnOff = document.getElementById("settingsCheckboxEmail").checked;
-const profileOnOff = document.getElementById("settingsCheckboxProfile").checked;
-const timezone = document.getElementById("Timezones").value;
-localStorage.setItem("Send Email Notifications?", emailOnOff);
-localStorage.setItem("Set Profile to Public?", profileOnOff);
-localStorage.setItem("Timezone", timezone);
-location.reload();
-}
+  const emailOnOff = document.getElementById("settingsCheckboxEmail").checked;
+  const profileOnOff = document.getElementById("settingsCheckboxProfile").checked;
+  const timezone = document.getElementById("Timezones").value;
+  localStorage.setItem("Send Email Notifications?", emailOnOff);
+  localStorage.setItem("Set Profile to Public?", profileOnOff);
+  localStorage.setItem("Timezone", timezone);
+};
 
 cancelBtn.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
-})
+});
+
+if (localStorage.getItem("Send Email Notifications?") === "true") {
+  settingsCheckboxEmail.checked = true;
+}
+if (localStorage.getItem("Set Profile to Public?") === "true") {
+  settingsCheckboxProfile.checked = true;
+}
+
+Timezones.value = localStorage.getItem("Timezone");
 
 /* ==================================== */
 /*             Local Storage            */
 /* ==================================== */
-for (let i = 0; i < localStorage.length; i++) {
-  const key = localStorage.key(i);
-  console.log(`${key}: ${localStorage.getItem(key)}`);
-}
+
